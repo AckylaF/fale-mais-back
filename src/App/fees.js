@@ -22,4 +22,4 @@ const fees = {
   "increase": 1.1
 }
 
-export default fees;
+module.exports = fees;

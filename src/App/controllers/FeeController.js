@@ -1,6 +1,6 @@
-import Call from '../call.js';
-import CalculateFee from '../calculateFee.js';
-import PhonePlan from '../phonePlan.js';
+const Call = require('../call');
+const CalculateFee = require('../calculateFee');
+const PhonePlan = require('../phonePlan');
 
 class FeeController {
   calculate(req, res) {
@@ -16,4 +16,4 @@ class FeeController {
   }
 }
 
-export default new FeeController;
+module.exports = new FeeController;

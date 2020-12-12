@@ -4,4 +4,4 @@ class PhonePlan {
   }
 }
 
-export default PhonePlan;
+module.exports = PhonePlan;

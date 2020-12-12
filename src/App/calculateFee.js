@@ -1,4 +1,4 @@
-import fees from './fees.js';
+const fees = require('./fees');
 
 class CalculateFee {
   constructor(call) {
@@ -20,4 +20,4 @@ class CalculateFee {
   }
 }
 
-export default CalculateFee;
+module.exports = CalculateFee;

@@ -1,8 +1,8 @@
-import { Router } from "express";
+const Router = require('express').Router;
 const routes = Router();
 
-import FeeController from "./App/controllers/FeeController.js";
+const FeeController = require("./App/controllers/FeeController.js");
 
 routes.post("/fee", FeeController.calculate);
 
-export default routes;
+module.exports = routes;

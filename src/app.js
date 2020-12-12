@@ -1,6 +1,6 @@
-import express, { urlencoded } from 'express';
-import cors from 'cors';
-import routes from './routes.js';
+const express = require('express');
+const cors = require('cors');
+const routes = require('./routes');
 
 class AppController {
   constructor() {
@@ -12,7 +12,7 @@ class AppController {
 
   middlewares() {
     this.server.use(
-      urlencoded({ extended: true }), 
+      express.urlencoded({ extended: true }), 
       cors()
     );
   }
@@ -22,4 +22,4 @@ class AppController {
   }
 }
 
-export default new AppController().server;
+module.exports = new AppController().server;

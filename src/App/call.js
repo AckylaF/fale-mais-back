@@ -7,4 +7,4 @@ class Call {
   }
 }
 
-export default Call;
+module.exports = Call;
