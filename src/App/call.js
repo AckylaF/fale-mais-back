@@ -1,8 +1,8 @@
 class Call {
-  constructor(duration, originDDD, destinationDDD, phonePlan) {
+  constructor(duration, originCode, destinationCode, phonePlan) {
     this.duration = duration;
-    this.originDDD = originDDD;
-    this.destinationDDD = destinationDDD;
+    this.originCode = originCode;
+    this.destinationCode = destinationCode;
     this.phonePlan = phonePlan;
   }
 }

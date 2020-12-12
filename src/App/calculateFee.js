@@ -6,7 +6,7 @@ class CalculateFee {
   }
 
   valueWithoutPhonePlan() {
-    return this.call.duration * fees[this.call.originDDD][this.call.destinationDDD];
+    return this.call.duration * fees[this.call.originCode][this.call.destinationCode];
   }
 
   valueWithPhonePlan() {
@@ -15,7 +15,7 @@ class CalculateFee {
 
     const exceedingTime = this.call.duration - this.call.phonePlan.franchise;
 
-    return exceedingTime * (fees[this.call.originDDD][this.call.destinationDDD] * 1.1);
+    return exceedingTime * (fees[this.call.originCode][this.call.destinationCode] * 1.1);
 
   }
 }
